@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="33979A70-9D45-4E11-AD97-ABB4728A9E70" name="students">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-08 22:24:23 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<abbreviation>stds</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="student_id" id="99200564-C673-95EB-0177-365A0FCE355D">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-08 22:26:07 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="31A1C5AF-F948-6C3B-9D41-47392B651EF5">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-08 22:43:59 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gender" id="58292248-E74C-F36B-F060-45CB1C387285">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-08 22:45:00 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="company_name" id="C2C7B1F0-FAE2-C979-0FFB-107BDA1DC857">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-08 22:46:20 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="015F6916-5F60-FA2C-51A4-A39B9EB47CFE" name="students_PK">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-08 22:26:07 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99200564-C673-95EB-0177-365A0FCE355D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

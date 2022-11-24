@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="61C8A5DB-1C67-05CF-8076-601BCABCBA18" name="courses">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-08 22:47:43 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<abbreviation>crs</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="title" id="85D563E4-AD55-6BDB-AE1B-2435BC220037">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-08 22:49:03 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="duration" id="1A6BA933-5331-AA6E-2482-BEE797CD65B6">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-08 22:50:43 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cost" id="329088D6-4775-A3E6-2F9C-4B83A7649CA3">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-08 22:53:44 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="course_id" id="0EBDE98B-EAB8-6239-6798-4A24F97DBF9F">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-08 22:55:37 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="170A01EB-C09D-545D-DB7A-EDA3C3B4F91E" name="courses_PK">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-08 22:55:37 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0EBDE98B-EAB8-6239-6798-4A24F97DBF9F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="courses_cost_CK" directorySegmentName="seg_0" id="386FB543-497D-C890-C269-5B157B933248">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 19:35:50 UTC</createdTime>
+<comment><![CDATA[Validates the cost should be between 300 to 2000.]]></comment>
+<ownerDesignName>Trainset</ownerDesignName>
+<rule><![CDATA[BETWEEN (300 and 2000)]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="courses_duration_CK" directorySegmentName="seg_0" id="77FA3D76-6047-BEF7-341F-9CC645ACA59C">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 19:35:50 UTC</createdTime>
+<comment><![CDATA[Validates that duration should be between 1 and 5]]></comment>
+<ownerDesignName>Trainset</ownerDesignName>
+<rule><![CDATA[BETWEEN (1 AND 5)]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

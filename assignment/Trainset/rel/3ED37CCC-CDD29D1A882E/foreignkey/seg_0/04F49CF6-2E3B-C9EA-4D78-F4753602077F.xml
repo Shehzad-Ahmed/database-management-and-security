@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="04F49CF6-2E3B-C9EA-4D78-F4753602077F" containerWithKeyObject="159787BC-5F92-481D-607E-27F82106BA81" localFKIndex="300F5988-8A65-6302-F7C5-F6A90499F73C" name="enrollments_offerings_FK">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 18:10:14 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<referredTableLongName>offerings</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>677B7D53-D196-F48F-20BA-5A72FE791C46</referredTableID>
+<keyObject>D84197B4-9ED9-1862-19C1-079BB2183C81</keyObject>
+<referredKeyID>D84197B4-9ED9-1862-19C1-079BB2183C81</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>offering_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

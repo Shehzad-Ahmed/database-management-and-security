@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="159787BC-5F92-481D-607E-27F82106BA81" name="enrollments">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 18:05:43 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<abbreviation>enrolls</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="enrollment_id" id="846C370E-8EC7-974D-8A28-5928D62ADCF9">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 18:06:44 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="students_id" id="301CD509-2037-DDB3-9877-27FE53C56806">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 18:07:59 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BC8D8A13-C3B7-5346-332A-27B8C3237267" referredColumn="99200564-C673-95EB-0177-365A0FCE355D"/>
+</associations>
+</Column>
+<Column name="offerings_id" id="4ED954CE-9C87-FC63-D7E0-360B4B1A0F79">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 18:10:14 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="04F49CF6-2E3B-C9EA-4D78-F4753602077F" referredColumn="A997BEB1-BC1A-69C5-F212-99E54EF1E161"/>
+</associations>
+</Column>
+<Column name="evaluation" id="CE2192AF-389C-F02E-D3ED-3CCEC7F8425E">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 18:24:27 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2B3B1C7A-C12D-39C5-2480-06EF96E12DB5" name="enrollments_PK">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 18:19:49 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="846C370E-8EC7-974D-8A28-5928D62ADCF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="65D8AC2C-261D-3216-0E82-D10DF03ED6F7" name="enrollments_students_FK">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 18:07:59 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="301CD509-2037-DDB3-9877-27FE53C56806"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="300F5988-8A65-6302-F7C5-F6A90499F73C" name="enrollments_offerings_FK">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 18:10:14 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4ED954CE-9C87-FC63-D7E0-360B4B1A0F79"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="evaluation_check" directorySegmentName="seg_0" id="E18E667B-FB78-2AAE-F68D-446E4CBFF9C1">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 18:42:44 UTC</createdTime>
+<comment><![CDATA[Validates the evaluation values should be between 0 and 5.]]></comment>
+<ownerDesignName>Trainset</ownerDesignName>
+<rule><![CDATA[evaluation BETWEEN 0 AND 5]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F0C8D362-FF6A-686B-F8EC-662F9B5BD225" name="examinations">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 17:51:55 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<abbreviation>exams</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="question" id="671582C1-B139-AC5A-F3D9-DF6F54CF7061">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 18:19:11 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="given_answer" id="EB23B07C-0594-D905-6A0D-9E6EF1BB729B">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 18:19:11 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pass" id="9A985294-078C-1573-8C4E-D6DE382F5F3F">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 18:19:11 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="exam_id" id="C133544E-7B07-DB93-FBB0-8AA0E8EFC0B3">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 18:19:11 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="enrollments_enrollment_id" id="94F01959-6DEF-6601-9490-655D3D9D8736">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 20:10:10 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6EEEB1FD-0073-C338-BE7B-A453DF896B43" referredColumn="846C370E-8EC7-974D-8A28-5928D62ADCF9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DAB4682E-5013-83C0-7F1E-4E077FA4C105" name="examinations_PK">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 18:19:38 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C133544E-7B07-DB93-FBB0-8AA0E8EFC0B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="82762C00-2A38-443A-C870-4706A611B69F" name="examinations_enrollments_FK">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 20:10:10 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94F01959-6DEF-6601-9490-655D3D9D8736"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

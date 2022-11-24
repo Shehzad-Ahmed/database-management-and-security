@@ -1,0 +1,28 @@
+-- Question 4 (a)
+SELECT DISTINCT c.COURSE_ID as "COURSE ID",
+                c.TITLE as "COURSE TITLE",
+                c.DURATION as "TOTAL DURATION (DAYS)",
+                c.COST AS "TOTAL COST"
+        FROM COURSES c INNER JOIN OFFERINGS o ON c.COURSE_ID=o.COURSE_ID
+        WHERE o.LOCATION='LONDON';
+
+-- Question 4 (b)
+SELECT  count(o.course_id) as TIMES,
+        o.COURSE_ID as "COURSE ID",
+        c.TITLE as "COURSE TITLE"
+        FROM OFFERINGS o INNER JOIN COURSES c ON o.COURSE_ID=c.COURSE_ID
+        GROUP BY o.COURSE_ID, c.TITLE
+        HAVING COUNT(o.course_id)=(SELECT max(count(course_id)) as TIMES
+                                    FROM OFFERINGS GROUP BY COURSE_ID
+                                    );
+
+
+-- DROP ALL TABLES
+DROP TABLE ATTENDANCE;
+DROP TABLE PAYMENT_DETAILS;
+DROP TABLE EXAMINATIONS;
+DROP TABLE ENROLLMENTS;
+DROP TABLE OFFERINGS;
+DROP TABLE INSTRUCTORS;
+DROP TABLE COURSES;
+DROP TABLE STUDENTS;

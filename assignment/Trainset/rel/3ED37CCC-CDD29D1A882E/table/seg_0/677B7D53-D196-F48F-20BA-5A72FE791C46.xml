@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="677B7D53-D196-F48F-20BA-5A72FE791C46" name="offerings">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 17:53:11 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<abbreviation>ofrngs</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="start_date" id="3633743A-DE83-0BF6-A244-2C804E320F58">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 17:57:42 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="location" id="B4090047-8246-C20C-C115-68595B850DB7">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 17:58:27 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="offering_id" id="A997BEB1-BC1A-69C5-F212-99E54EF1E161">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 17:58:27 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="instructors_id" id="2B4CD075-FFCD-D174-D1CB-D24683C7E473">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 18:10:55 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="044D4D6F-C285-557C-B7A2-863D14F08087" referredColumn="BCE37013-9306-29EB-D291-B9E0CDD7C0D3"/>
+</associations>
+</Column>
+<Column name="courses_id" id="EC921C7B-5BA3-5286-6D47-F7E17EDE69E3">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 18:12:52 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD2C0E86-0006-8006-1A31-6E012CCC6A84" referredColumn="0EBDE98B-EAB8-6239-6798-4A24F97DBF9F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D84197B4-9ED9-1862-19C1-079BB2183C81" name="offerings_PK">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 18:10:06 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A997BEB1-BC1A-69C5-F212-99E54EF1E161"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="61272B03-0E18-4819-F1A5-2CC05772BB07" name="offerings_instructors_FK">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 18:10:55 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B4CD075-FFCD-D174-D1CB-D24683C7E473"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5E4740E2-BB0A-03B7-0ED7-A7B083D52E9E" name="offerings_courses_FK">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-15 18:12:52 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC921C7B-5BA3-5286-6D47-F7E17EDE69E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
