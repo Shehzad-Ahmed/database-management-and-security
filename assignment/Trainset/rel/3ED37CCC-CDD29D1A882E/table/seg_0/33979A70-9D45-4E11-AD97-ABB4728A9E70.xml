@@ -23,7 +23,6 @@
 <createdBy>shehzad</createdBy>
 <createdTime>2022-11-08 22:43:59 UTC</createdTime>
 <ownerDesignName>Trainset</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>

@@ -19,7 +19,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="students_id" id="301CD509-2037-DDB3-9877-27FE53C56806">
+<Column name="student_id" id="301CD509-2037-DDB3-9877-27FE53C56806">
 <createdBy>shehzad</createdBy>
 <createdTime>2022-11-15 18:07:59 UTC</createdTime>
 <ownerDesignName>Trainset</ownerDesignName>
@@ -33,7 +33,7 @@
 <colAssociation fkAssociation="BC8D8A13-C3B7-5346-332A-27B8C3237267" referredColumn="99200564-C673-95EB-0177-365A0FCE355D"/>
 </associations>
 </Column>
-<Column name="offerings_id" id="4ED954CE-9C87-FC63-D7E0-360B4B1A0F79">
+<Column name="offering_id" id="4ED954CE-9C87-FC63-D7E0-360B4B1A0F79">
 <createdBy>shehzad</createdBy>
 <createdTime>2022-11-15 18:10:14 UTC</createdTime>
 <ownerDesignName>Trainset</ownerDesignName>

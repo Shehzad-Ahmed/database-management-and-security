@@ -20,7 +20,7 @@
 <ownDataTypeParameters>19 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="students_id" id="674B8ADE-D29E-B702-9F71-BACC9C0F6666">
+<Column name="student_id" id="674B8ADE-D29E-B702-9F71-BACC9C0F6666">
 <createdBy>shehzad</createdBy>
 <createdTime>2022-11-15 18:13:58 UTC</createdTime>
 <ownerDesignName>Trainset</ownerDesignName>

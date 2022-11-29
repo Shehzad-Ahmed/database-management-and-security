@@ -8,4 +8,54 @@
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="attendance" id="B4C1AE82-8AE0-3172-1246-123B0BA627CB">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-22 16:53:34 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="enrollment_id" id="61F1BDBD-3C25-D03F-F6F1-76470B366323">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-22 16:54:22 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A5F903A7-9877-8BD0-948B-D1050474F85C" referredColumn="846C370E-8EC7-974D-8A28-5928D62ADCF9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E22BD791-2DF0-0423-E07A-AA92E388260C" name="attendance_PK">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-22 16:56:14 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4C1AE82-8AE0-3172-1246-123B0BA627CB"/>
+<colUsage columnID="61F1BDBD-3C25-D03F-F6F1-76470B366323"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5335D868-1A49-37C5-87CB-5A70093601DB" name="attendance_enrollments_FK">
+<createdBy>shehzad</createdBy>
+<createdTime>2022-11-22 16:54:22 UTC</createdTime>
+<ownerDesignName>Trainset</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61F1BDBD-3C25-D03F-F6F1-76470B366323"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
 </Table>

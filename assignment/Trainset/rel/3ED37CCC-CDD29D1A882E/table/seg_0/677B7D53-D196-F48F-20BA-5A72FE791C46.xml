@@ -13,7 +13,6 @@
 <createdBy>shehzad</createdBy>
 <createdTime>2022-11-15 17:57:42 UTC</createdTime>
 <ownerDesignName>Trainset</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -24,7 +23,6 @@
 <createdBy>shehzad</createdBy>
 <createdTime>2022-11-15 17:58:27 UTC</createdTime>
 <ownerDesignName>Trainset</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -42,7 +40,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="instructors_id" id="2B4CD075-FFCD-D174-D1CB-D24683C7E473">
+<Column name="instructor_id" id="2B4CD075-FFCD-D174-D1CB-D24683C7E473">
 <createdBy>shehzad</createdBy>
 <createdTime>2022-11-15 18:10:55 UTC</createdTime>
 <ownerDesignName>Trainset</ownerDesignName>
@@ -56,7 +54,7 @@
 <colAssociation fkAssociation="044D4D6F-C285-557C-B7A2-863D14F08087" referredColumn="BCE37013-9306-29EB-D291-B9E0CDD7C0D3"/>
 </associations>
 </Column>
-<Column name="courses_id" id="EC921C7B-5BA3-5286-6D47-F7E17EDE69E3">
+<Column name="course_id" id="EC921C7B-5BA3-5286-6D47-F7E17EDE69E3">
 <createdBy>shehzad</createdBy>
 <createdTime>2022-11-15 18:12:52 UTC</createdTime>
 <ownerDesignName>Trainset</ownerDesignName>

@@ -9,33 +9,10 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="question" id="671582C1-B139-AC5A-F3D9-DF6F54CF7061">
-<createdBy>shehzad</createdBy>
-<createdTime>2022-11-15 18:19:11 UTC</createdTime>
-<ownerDesignName>Trainset</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT040</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="given_answer" id="EB23B07C-0594-D905-6A0D-9E6EF1BB729B">
-<createdBy>shehzad</createdBy>
-<createdTime>2022-11-15 18:19:11 UTC</createdTime>
-<ownerDesignName>Trainset</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT040</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="pass" id="9A985294-078C-1573-8C4E-D6DE382F5F3F">
 <createdBy>shehzad</createdBy>
 <createdTime>2022-11-15 18:19:11 UTC</createdTime>
 <ownerDesignName>Trainset</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
@@ -53,7 +30,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="enrollments_enrollment_id" id="94F01959-6DEF-6601-9490-655D3D9D8736">
+<Column name="enrollment_id" id="94F01959-6DEF-6601-9490-655D3D9D8736">
 <createdBy>shehzad</createdBy>
 <createdTime>2022-11-15 20:10:10 UTC</createdTime>
 <ownerDesignName>Trainset</ownerDesignName>
